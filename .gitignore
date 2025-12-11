@@ -1,0 +1,21 @@
+# Ignore dataset and large folders
+Basic-Analysis/Dataset/
+Feature_Images/
+Result/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Shapefile and image
+*.tif
+*.shp
+*.dbf
+*.prj
+*.shx
+*.cpg
+*.xml
+*.csv
+*.pth
