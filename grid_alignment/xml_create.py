@@ -48,7 +48,7 @@ def create_pascal_voc_xml(filename, shape, boxes, output_path):
     xml_str = minidom.parseString(ET.tostring(annotation)).toprettyxml(indent="   ")
     with open(output_path, "w") as f:
         f.write(xml_str)
-    print(f"✅ XML file successfully created at: {output_path}")
+    print(f"XML file successfully created at: {output_path}")
 
 def nms(boxes, scores, iou_threshold=0.3):
     # Standard Non-Maximum Suppression
