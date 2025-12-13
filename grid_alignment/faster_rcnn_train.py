@@ -211,7 +211,7 @@ if __name__ == "__main__":
         optimizer = torch.optim.SGD(params, lr=0.005, momentum=0.9, weight_decay=0.0005)
 
         # 5. Start Training
-        num_epochs = 1000
+        num_epochs = 150
         print("Start Training...")
         for epoch in range(num_epochs):
             train_one_epoch(model, optimizer, data_loader, device, epoch)

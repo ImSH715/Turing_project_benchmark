@@ -4,7 +4,7 @@ import pandas as pd
 # File paths
 grid_shp = "shapefile/grid_3x3_centered_cell_0_8.shp"
 detections_shp = "../Dataset/detections.shp"
-output_csv = "../Dataset/tree_clown_centers_for_all_overlaps.csv"
+output_csv = "../Dataset/overlap_clown_center.csv"
 
 # Load data
 grid_gdf = gpd.read_file(grid_shp)
