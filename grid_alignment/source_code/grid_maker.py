@@ -2,10 +2,14 @@ import pandas as pd
 import geopandas as gpd
 from shapely.geometry import box
 import numpy as np
-
+"""
+make grid based on the random_point.csv
+each grids are located in the center point of the each coordinates.
+The grids are in 3x3 form, and the size is cell_size.
+"""
 # Input configuration
 csv_path = "../Dataset/random_point.csv"
-cell_size = 0.8  # grid cell size
+cell_size = 0.8  # grid size
 
 df = pd.read_csv(csv_path)
 
